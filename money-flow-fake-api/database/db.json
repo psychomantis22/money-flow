@@ -1,0 +1,12 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Alimentação"
+        },
+        {
+            "id": 2,
+            "nome": "Conta Fixa"
+        }
+    ]
+}
