@@ -1,0 +1,21 @@
+{
+  "name": "money-flow-ui-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "output": "release/"
+  },
+  "scripts": {
+    "build": "ncp ../money-flow-ui-vue/dist ./dist",
+    "electron": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.1.1"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
+  }
+}

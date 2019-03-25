@@ -61,7 +61,7 @@
           </div>
           <div v-show="showAddButton" class="button-fixed">
             <router-link class="md-raised md-primary" to="/lancamento" tag="md-button">
-              NOVO LANÇAMENTO
+              +
             </router-link>
           </div>
         </md-app-content>
