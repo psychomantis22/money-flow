@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testes Electron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <button onclick="testar()">Testar</button>
+    <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+
+        ipcRenderer.on('myresponse', (event, data) => {
+            console.log(data);
+        });
+
+        function testar() {
+            ipcRenderer.send('myevent', { texto: 'oi' });
+        }
+    </script>
+</body>
+</html>
